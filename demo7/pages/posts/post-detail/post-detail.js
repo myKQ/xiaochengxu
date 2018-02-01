@@ -1,10 +1,12 @@
 var postsData = require('../../../data/posts-data.js');
-
+// 拿到全局变量和属性
+var app = getApp();
 Page({
   data:{
     isPlayingMusic: false
   },
   onLoad: function(option) {
+    var globalData = app.globalData;
     // 接受id
     var postId = option.id;
     this.data.currentPostId = postId;
@@ -30,7 +32,29 @@ Page({
       var postsCollected = {};
       postsCollected[postId] = false;
       wx.setStorageSync('posts_collected', postsCollected) 
+    };
+    if(app.globalData.g_isPlayingMusic) {
+      this.setData({
+        isPlayingMusic: true
+      })
     }
+    this.setMusicMonitor();
+  },
+  setMusicMonitor: function() {
+    // 监听音乐启动停止
+    var _this = this;
+    wx.onBackgroundAudioPlay(function () {
+      _this.setData({
+        isPlayingMusic: true
+      })
+      app.globalData.g_isPlayingMusic = true;
+    });
+    wx.onBackgroundAudioPause(function () {
+      _this.setData({
+        isPlayingMusi: false
+      })
+      app.globalData.g_isPlayingMusic = false;
+    })
   },
   // getSto: function(event) {
   //  var msg = wx.getStorageSync('key');
