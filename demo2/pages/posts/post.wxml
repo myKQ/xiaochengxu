@@ -1,0 +1,49 @@
+<view>
+  <swiper vertical="{{ false }}" indicator-dots="true"
+  autoplay="true" interval="5000">
+    <swiper-item>
+      <image src="/images/wx.png"></image>
+    </swiper-item>
+     <swiper-item>
+      <image src="/images/vr.png"></image>
+    </swiper-item>
+     <swiper-item>
+      <image src="/images/iqiyi.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="post-container">
+    <view class="post-author-date">
+      <image wx:if="{{true}}" class="post-author" src="{{ avatar }}"></image>
+      <text class="post-date">{{ date }}</text>
+    </view> 
+
+    <text class="post-title">{{ title }}</text>
+    <image class="post-image" src="{{imgSrc}}"></image>
+    <text class="post-content">{{ content }}</text>
+
+    <view class="post-like">
+      <image class="post-link-image" src="../../images/icon/chat.png"></image>
+      <text class="post-like-font">{{ reading }}</text>
+      <image class="post-link-image" src="../../images/icon/view.png"></image>
+      <text class="post-like-font">{{ collection }}</text>
+    </view>
+  </view>
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/3.png"></image>
+      <text class="post-date">Nov 34 2018</text>
+    </view> 
+
+    <text class="post-title">美味的大螃蟹</text>
+    <image class="post-image" src="/images/post/crab.png"></image>
+    <text class="post-content">螃蟹是含有丰富维生素的美味佳品，深受人们青睐。据分析，每百克蟹肉中含有蛋白质14克、脂肪5.9克、碳水化合物7克、钙129毫克、磷145毫...</text>
+
+    <view class="post-like">
+      <image class="post-link-image" src="../../images/icon/chat.png"></image>
+      <text class="post-like-font">88</text>
+      <image class="post-link-image" src="../../images/icon/view.png"></image>
+      <text class="post-like-font">22</text>
+    </view>
+  </view>
+</view>

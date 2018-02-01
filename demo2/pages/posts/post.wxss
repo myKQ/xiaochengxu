@@ -1,0 +1,72 @@
+swiper {
+  width: 100%;
+  height: 400rpx;
+}
+swiper image {
+  width: 100%;
+  heigth: 400rpx;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  boredr-top: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.post-author-date {
+  margin: 10rpx 0 20rpx 10rpx;
+}
+.post-author {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.post-date {
+  margin-left: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  font-size: 26rpx;
+}
+.post-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.post-image {
+  margin-left: 16px;
+  width: 100%;
+  height: 340rpx;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.post-content {
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+}
+.post-like {
+  font-size: 13px;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  line-height: 16px;
+  margin-left: 10px;
+}
+.post-link-image {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.post-like-font {
+  vertical-align: middle;
+  margin-right: 20px;
+}
