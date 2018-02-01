@@ -2,7 +2,7 @@ var postsData = require('../../../data/posts-data.js');
 
 Page({
   data:{
-
+    isPlayingMusic: false
   },
   onLoad: function(option) {
     // 接受id
@@ -101,5 +101,25 @@ Page({
         });
       }
     })
+  },
+  onMusicTap: function() {
+    var currentPostId = this.data.currentPostId;
+    var postData = postsData.postList[currentPostId];
+    var isPlayingMusic = this.data.isPlayingMusic;
+    if (isPlayingMusic) {
+      wx.pauseBackgroundAudio();
+      this.setData({
+        isPlayingMusic: false
+      })
+    }else{
+      wx.playBackgroundAudio({
+        dataUrl: postData.music.url,
+        titel: postData.music.titel,
+        coverImgUrl: postData.music.coverImgUrl
+      });
+      this.setData({
+        isPlayingMusic: true
+      })
+    }
   }
 })
