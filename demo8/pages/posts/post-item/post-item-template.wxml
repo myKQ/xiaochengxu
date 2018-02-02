@@ -1,0 +1,20 @@
+<template name="postItem">
+	<view class="post-container">
+    	<view class="post-author-date">
+        	<image wx:if="{{true}}" class="post-author" src="{{ avatar }}"></image>
+        	<text class="post-date">{{ date }} {{index}}</text>
+      	</view> 
+
+      	<text class="post-title">{{ title }}</text>
+      	<image class="post-image" src="{{imgSrc}}"></image>
+      	<text class="post-content">{{ content }}</text>
+
+      	<view class="post-like">
+          <!-- 这里使用绝对路径比较好，可以解决共用样式的引用层级不同问题 -->
+        	<image class="post-link-image" src="/images/icon/chat.png"></image>
+        	<text class="post-like-font">{{ reading }}</text>
+        	<image class="post-link-image" src="/images/icon/view.png"></image>
+        	<text class="post-like-font">{{ collection }}</text>
+      	</view>
+    </view>
+</template>
