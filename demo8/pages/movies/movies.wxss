@@ -1,1 +1,9 @@
-@import "movie/movie-template.wxss"
+@import "movie/movie-template.wxss";
+
+.container {
+  background-color: #f2f2f2;
+}
+.movies-template {
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}

@@ -3,6 +3,7 @@ App({
   globalData:{
     // 全局变量的一个好的写法
     g_isPlayingMusic: false,
-    g_currentMusicPostId: null
+    g_currentMusicPostId: null,
+    doubanBase: "http://t.yushu.im"
   }
 })
