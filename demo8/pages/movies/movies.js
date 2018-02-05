@@ -12,19 +12,19 @@ Page({
     var top250Url = app.globalData.doubanBase + "/v2/movie/top250" + "?start=0&count=3";
     this.getMovieListData(inTheatersUrl,"inTheaters","正在热映");
     this.getMovieListData(comingSoonUrl,"comingSoon","即将上映");
-    this.getMovieListData(top250Url,"top250","豆瓣top250");
+    this.getMovieListData(top250Url,"top250","豆瓣Top250");
   },
   onMoreTap: function(event) {
     var category = event.currentTarget.dataset.category;
     wx.navigateTo({
-      url: 'more-movie/more-movie?category=' + category,
+      url: 'more-movie/more-movie?category=' + category
     })
   },
   getMovieListData: function (url,settedKey,categoryTitle) {
     var _this = this;
     wx.request({
       url: url,
-      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      method: 'GET', 
       header: {
         "Content-Type": ""
       },
