@@ -4,7 +4,9 @@ Page({
   data: {
     inTheaters: {},
     comingSoon: {},
-    top250: {}
+    top250: {},
+    containerShow: true,
+    searchPanelShow: false
   },
   onLoad: function(event) {
     var inTheatersUrl = app.globalData.doubanBase + "/v2/movie/in_theaters" + "?start=0&count=3";
@@ -38,6 +40,21 @@ Page({
         console.log(error)
       }
     })
+  },
+  onBindFocus: function(event) {
+    this.setData({
+      containerShow: false,
+      searchPanelShow: true
+    })
+  },
+  onDelTap: function(event) {
+    this.setData({
+      containerShow: true,
+      searchPanelShow: false
+    })
+  },
+  onBindConfirm: function(event) {
+    console.log("fffffffff")
   },
   processDoubanData: function (moviesDouban,settedKey,categoryTitle) {
     var movies = [];
