@@ -16,7 +16,7 @@ function http(url,callback) {
     url: url,
     method: 'GET',
     header: {
-      "Content-Type": ""
+      "Content-Type": "json"
     },
     success: function (res) {
       callback(res.data)
