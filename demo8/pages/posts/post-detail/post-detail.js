@@ -56,7 +56,13 @@ Page({
       })
       app.globalData.g_isPlayingMusic = false;
       app.globalData.g_currentMusicPostId = null;
-    })
+    }),
+    wx.onBackgroundAudioStop(function () {
+      _this.setData({
+        isPlayingMusi: false
+      })
+      app.globalData.g_isPlayingMusic = false;
+      // app.globalData.g_currentMusicPostId = null;
   },
   // getSto: function(event) {
   //  var msg = wx.getStorageSync('key');

@@ -5,6 +5,7 @@ Page({
     inTheaters: {},
     comingSoon: {},
     top250: {},
+    searchResult: {},
     containerShow: true,
     searchPanelShow: false
   },
@@ -50,11 +51,14 @@ Page({
   onDelTap: function(event) {
     this.setData({
       containerShow: true,
-      searchPanelShow: false
+      searchPanelShow: false,
+      searchResult: {}
     })
   },
   onBindConfirm: function(event) {
-    console.log("fffffffff")
+    var text = event.detail.value
+    var searchUrl = app.globalData.doubanBase + "/v2/movie/search?q=" + text;
+    this.getMovieListData(searchUrl, "searchResult", "");
   },
   processDoubanData: function (moviesDouban,settedKey,categoryTitle) {
     var movies = [];

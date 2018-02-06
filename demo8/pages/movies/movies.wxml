@@ -19,5 +19,5 @@
 </view>
 
 <view class="search-panel" wx-if="{{searchPanelShow}}">
-  <template is="movieGridTemplate"/>
+  <template is="movieGridTemplate" data="{{...searchResult}}"/>
 </view>
