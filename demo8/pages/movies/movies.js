@@ -23,6 +23,12 @@ Page({
       url: 'more-movie/more-movie?category=' + category
     })
   },
+  onMovietap: function(event) {
+    var movieId = event.currentTarget.dataset.movieid;
+    wx.navigateTo({
+      url: 'movie-detail/movie-detail?id=' + movieId
+    })
+  },
   getMovieListData: function (url,settedKey,categoryTitle) {
     var _this = this;
     wx.request({
