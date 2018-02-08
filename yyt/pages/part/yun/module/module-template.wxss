@@ -1,0 +1,9 @@
+.module-img {
+  width: 94rpx;
+  height: 94rpx;
+  margin: 0 auto;
+}
+.module-title {
+  font-size: 30rpx;
+  padding-top: 5rpx;
+}

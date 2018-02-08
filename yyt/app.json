@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/part/baike/baike",
+    "pages/part/shangcheng/shangcheng",
+    "pages/part/yun/yun",
+    "pages/part/dingdan/dingdan",
+    "pages/part/wode/wode"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#da0013",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/part/baike/baike",
+        "text": "百科",
+        "iconPath": "/images/tab/baike.png",
+        "selectedIconPath": "/images/tab/baike_hl.png"
+      },
+      {
+        "pagePath": "pages/part/shangcheng/shangcheng",
+        "text": "商城",
+        "iconPath": "/images/tab/shangcheng.png",
+        "selectedIconPath": "/images/tab/shangcheng_hl.png"
+      },
+      {
+        "pagePath": "pages/part/yun/yun",
+        "text": "运",
+        "iconPath": "/images/tab/shangcheng.png",
+        "selectedIconPath": "/images/tab/shangcheng_hl.png"
+      },
+      {
+        "pagePath": "pages/part/dingdan/dingdan",
+        "text": "订单",
+        "iconPath": "/images/tab/dingdan.png",
+        "selectedIconPath": "/images/tab/dingdan_hl.png"
+      },
+      {
+        "pagePath": "pages/part/wode/wode",
+        "text": "我的",
+        "iconPath": "/images/tab/wode.png",
+        "selectedIconPath": "/images/tab/wode_hl.png"
+      }
+    ]
+  }
+}

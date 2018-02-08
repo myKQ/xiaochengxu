@@ -1,0 +1,28 @@
+<import src="module/module-template.wxml"/>
+<import src="huangli/huangli-template.wxml"/>
+<import src="xingzuo/xingzuo-template.wxml"/>
+<import src="jiemeng/jiemeng-template.wxml"/>
+<view>
+  <swiper vertical="{{ false }}" indicator-dots="true"
+autoplay="true" interval="3000">
+    <swiper-item>
+      <image class="banner-img" src="/images/part/banner1.png" mode="aspectFill" />
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-img" src="/images/part/banner2.png" mode="aspectFill" />
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-img" src="/images/part/banner3.png" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+  <view class="yunList">
+    <block wx:for="{{yunList}}">
+      <view class="module" data-yunId="{{item.yunId}}">
+        <template is="moduleTemplate" data="{{...item}}"/>
+      </view>
+    </block> 
+  </view>
+  <template is="huangliTemplate"/>
+  <template is="xingzuoTemplate"/>
+  <template is="jiemengTemplate"/>
+</view>

@@ -1,0 +1,4 @@
+<template name="moduleTemplate">
+    <image class="module-img" src="{{imgSrc}}"/>
+    <text class="module-title">{{title}}</text>
+</template>
