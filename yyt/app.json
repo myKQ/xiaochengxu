@@ -6,13 +6,14 @@
     "pages/part/shangcheng/shangcheng",
     "pages/part/yun/yun",
     "pages/part/dingdan/dingdan",
-    "pages/part/wode/wode"
+    "pages/part/wode/wode",
+    "pages/part/yun/module-list/module-list"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#da0013",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
     "borderStyle": "white",

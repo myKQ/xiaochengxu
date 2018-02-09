@@ -1,0 +1,4 @@
+@import "../module-detail/module-detail-template.wxss";
+.currentList {
+  padding: 30rpx 20rpx;
+}

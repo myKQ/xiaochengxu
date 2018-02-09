@@ -8,3 +8,8 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.dif {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

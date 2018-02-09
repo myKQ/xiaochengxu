@@ -1,7 +1,4 @@
 <import src="module/module-template.wxml"/>
-<import src="huangli/huangli-template.wxml"/>
-<import src="xingzuo/xingzuo-template.wxml"/>
-<import src="jiemeng/jiemeng-template.wxml"/>
 <view>
   <swiper vertical="{{ false }}" indicator-dots="true"
 autoplay="true" interval="3000">
@@ -17,12 +14,72 @@ autoplay="true" interval="3000">
   </swiper>
   <view class="yunList">
     <block wx:for="{{yunList}}">
-      <view class="module" data-yunId="{{item.yunId}}">
+      <view class="module" data-yunId="{{item.yunId}}" catchtap="onModuletap">
         <template is="moduleTemplate" data="{{...item}}"/>
       </view>
     </block> 
+  </view> 
+</view>
+
+<view class="part-container">
+  <view class="part-header">
+    <view class="part-slogan">
+      <image class="part-img" src="/images/part/line.png"/>
+      <text class="part">黄历</text>
+    </view>
+    <view>
+      <text class="huangli-more">更多</text>
+    </view>
   </view>
-  <template is="huangliTemplate"/>
-  <template is="xingzuoTemplate"/>
-  <template is="jiemengTemplate"/>
+  <view class="huangli-show">
+      <image class="huangli-img" src="/images/part/huanglitu.png" />
+      <view class="huangli-date">
+         <view class="huangli-yueri">
+          <text></text>月
+          <text></text>日
+        </view>
+        <view class="huangli-xiangqing">
+          农历 2018年12月24日 星期五（阴历）
+        </view>
+      </view>
+  </view>
+</view>
+  
+<view class="part-container">
+  <view class="part-header">
+    <view class="part-slogan">
+      <image class="part-img" src="/images/part/line.png"/>
+      <text class="part">十二星座</text>
+    </view>
+    <view>
+      <text class="xingzuo-more">更多</text>
+    </view>
+  </view>
+  <view class="xingzuoList">
+     <block wx:for="{{xingzuoList}}">
+      <view class="module" data-xingzuoId="{{item.xingzuoId}}"> 
+        <template is="moduleTemplate" data="{{...item}}"/>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="part-container">
+  <view class="part-header">
+    <view class="part-slogan">
+      <image class="part-img" src="/images/part/line.png"/>
+      <text class="part">解梦</text>
+    </view>
+    <view>
+      <text class="jiemeng-more">更多</text>
+    </view>
+  </view>
+  <image class="jiemeng-img" src="/images/part/jiemenglogo.png" />
+  <view class="jiemengList">
+     <block wx:for="{{jiemengList}}">
+      <view class="module" data-xingzuoId="{{item.jiemengId}}"> 
+        <template is="moduleTemplate" data="{{...item}}"/>
+      </view>
+    </block>
+  </view>
 </view>

@@ -1,4 +1,5 @@
 <template name="moduleTemplate">
     <image class="module-img" src="{{imgSrc}}"/>
     <text class="module-title">{{title}}</text>
+    <text class="module-timeFrame">{{timeFrame}}</text>
 </template>

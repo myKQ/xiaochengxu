@@ -1,7 +1,4 @@
 @import "module/module-template.wxss";
-@import "huangli/huangli-template.wxss";
-@import "xingzuo/xingzuo-template.wxss";
-@import "jiemeng/jiemeng-template.wxss";
 swiper {
  	width: 100%;
   	height: 295rpx;
@@ -10,7 +7,7 @@ swiper {
 	width: 100%;
   	height: 295rpx;
 }
-.yunList {
+.yunList,.xingzuoList,.jiemengList {
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -22,3 +19,70 @@ swiper {
   flex-direction:column;
   padding: 20rpx 0;
 }
+
+/* part样式 */
+.part-header {
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 24rpx;
+}
+.part-img {
+  width: 7rpx;
+  height: 30rpx;
+  vertical-align:middle;
+  margin-right: 10rpx;
+}
+.part {
+  font-size: 28rpx;
+  vertical-align:middle;
+}
+/* 黄历 */
+.huangli-show {
+  padding: 10rpx 24rpx;
+  position: relative;
+}
+.huangli-date {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 28rpx;
+  text-align: center;
+}
+.huangli-xiangqing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.huangli-yueri {
+  font-size: 38rpx;
+  color:red;
+}
+.huangli-more {
+  font-size: 28rpx;
+}
+.huangli-img {
+  width: 100%;
+  height: 194rpx;
+}
+/* 星座 */
+.xingzuoList .module ,.jiemengList .module{
+  border-right:1px solid #eee;
+  border-bottom:1px solid #eee;
+  margin-left:-1px;
+}
+.xingzuo-more {
+  font-size: 28rpx;
+}
+/* 解梦 */
+.jiemeng-more {
+  font-size: 28rpx;
+}
+.jiemeng-img {
+  width: 100%;
+  height: 210rpx;
+}
+
+

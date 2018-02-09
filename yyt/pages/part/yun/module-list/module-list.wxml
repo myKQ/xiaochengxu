@@ -1,0 +1,4 @@
+<import src="../module-detail/module-detail-template.wxml"/>
+<block wx:for="{{currentList}}">
+    <template is="moduleListTemplate" data="{{...item}}"/>
+</block> 

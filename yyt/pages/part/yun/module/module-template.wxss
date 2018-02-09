@@ -7,3 +7,6 @@
   font-size: 30rpx;
   padding-top: 5rpx;
 }
+.module-timeFrame {
+  font-size: 30rpx;
+}
