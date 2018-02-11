@@ -11,9 +11,11 @@
   justify-content: flex-start;
   width: 80%;
 }
+.currentText {
+  width: 60%;
+}
 .currentText text {
   width: 100%;
-  display:flex;
   font-size: 28rpx;
   line-height: 53rpx;
   margin-left: 15rpx;

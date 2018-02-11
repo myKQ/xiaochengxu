@@ -9,6 +9,7 @@
   box-sizing: border-box;
 } 
 .dif {
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
