@@ -6,6 +6,7 @@ Page({
     
   },
   onLoad: function (options) {
+    console.log(options)
   	// this.data.postList = postsData.postList;
     this.setData({
       postList:postsData.postList
