@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import "weui.wxss"; 
 text {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;

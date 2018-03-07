@@ -5,7 +5,8 @@
     "pages/posts/post-detail/post-detail",
     "pages/movies/movies",
     "pages/movies/more-movie/more-movie",
-    "pages/movies/movie-detail/movie-detail"
+    "pages/movies/movie-detail/movie-detail",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"
@@ -16,6 +17,12 @@
       {
         "pagePath": "pages/movies/movies",
         "text": "电影",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "weui",
         "iconPath": "/images/tab/yuedu.png",
         "selectedIconPath": "/images/tab/yuedu_hl.png"
       },

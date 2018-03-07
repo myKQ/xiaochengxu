@@ -31,5 +31,21 @@ Page({
     wx.navigateTo({
       url: "post-detail/post-detail?id=" + postId
     })
+  },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '快来转发',
+      path: '/page/user?id=123',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 })

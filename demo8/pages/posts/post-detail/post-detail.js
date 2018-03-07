@@ -7,6 +7,7 @@ Page({
   },
   onLoad: function(option) {
     var globalData = app.globalData;
+    console.log(globalData)
     // 接受id
     var postId = option.id;
     this.data.currentPostId = postId;
