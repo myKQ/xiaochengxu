@@ -20,9 +20,19 @@
 			"current": -1,
 			"list": []
 		},
-		"miniprogram": {
-			"current": -1,
+		"game": {
 			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "查看",
+					"pathName": "pages/posts/post",
+					"query": "1001"
+				}
+			]
 		}
 	}
 }

@@ -1,12 +1,14 @@
 {
   "pages": [
-  	"pages/index/index",
+    "pages/index/index",
     "pages/posts/post",
     "pages/posts/post-detail/post-detail",
     "pages/movies/movies",
     "pages/movies/more-movie/more-movie",
     "pages/movies/movie-detail/movie-detail",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/navigate/navigate",
+    "pages/test/redirect"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"
