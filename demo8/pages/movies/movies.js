@@ -7,7 +7,8 @@ Page({
     top250: {},
     searchResult: {},
     containerShow: true,
-    searchPanelShow: false
+    searchPanelShow: false,
+    name:''
   },
   onLoad: function(event) {
     var inTheatersUrl = app.globalData.doubanBase + "/v2/movie/in_theaters" + "?start=0&count=3";
@@ -58,7 +59,8 @@ Page({
     this.setData({
       containerShow: true,
       searchPanelShow: false,
-      searchResult: {}
+      searchResult: {},
+      name:''
     })
   },
   onBindConfirm: function(event) {
